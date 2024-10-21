@@ -10,8 +10,8 @@ main = ReplyKeyboardMarkup(keyboard=[
         KeyboardButton(text='Use')
     ]
 ],
-    resize_keyboard=True,
-    input_field_placeholder='Choose menu point')
+    resize_keyboard=False,
+    input_field_placeholder='Create with it')
 
 
 settings = InlineKeyboardMarkup(inline_keyboard=[

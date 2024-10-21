@@ -1,7 +1,7 @@
 from aiogram import Bot, Dispatcher, F, Router
 from aiogram.filters import CommandStart, Command
 from aiogram.types import Message
-import app.keyboards as kb
+import app.keyboards as keyboards
 
 
 router = Router()
@@ -9,7 +9,7 @@ router = Router()
 
 @router.message(CommandStart())
 async def cmd_start(message: Message):
-    await message.answer('Hi', reply_markup=kb.settings)
+    await message.answer('Hi', reply_markup=keyboards.main)
 
 
 
